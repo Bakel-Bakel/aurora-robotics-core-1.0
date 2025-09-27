@@ -27,12 +27,12 @@ Understand the tool and the code.
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/bakel-bakel/robotics-core-workshop-oct2025.git
-   cd robotics-core-workshop-oct2025
+   git clone git@github.com:Bakel-Bakel/aurora-robotics-core-1.0.git
+   cd aurora-robotics-core-1.0
    ```
 
-2. **Copy the file into your task folder**  
-   - Copy `2_links_2d.py` into the `your-task-folder/` folder. 
+2. Create a new folder named your-name in `tasks/Task-2/`  
+   - Copy `2_links_2d.py` into the `tasks/Task-2/your-name` folder. 
    - Rename it to `my-name-2_links_2d.py` 
 
 3. **Comment the code**  
@@ -45,6 +45,7 @@ Understand the tool and the code.
      name-readme.md
      ```  
    - Inside, explain more on what you did and learned.  
+   - Everything happens inside your folder.
 
 
 5. **That’s all!** 🎉  
