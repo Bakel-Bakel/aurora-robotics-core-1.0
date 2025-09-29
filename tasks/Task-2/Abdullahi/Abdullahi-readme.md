@@ -9,22 +9,25 @@ The forward kinematics function uses basic trigonometry to calculate the X and Y
 
 ## Get Started with the Script
 ### 1. Requirements
-Install the following Python libraries (ensure you have a python version installed already or visit [python.ord](https://www.python.org/downloads/) to download the latest version of Python):
+Install the following Python libraries (ensure you have a Python version installed already or visit [python.ord](https://www.python.org/downloads/) to download the latest version of Python):
 ```bash
 pip install numpy matplotlib
-
+```
 ### 2. Clone the repository
 Clone the project repository
 ```bash
 git clone git@github.com:Bakel-Bakel/aurora-robotics-core-1.0.git
+```
 
 ### 3. Run the Script
 Navigate to:
 ```bash
 aurora-robotics-core-1.0/codes/kinematics/forward-kinematics/py/2-links_2d.py
+```
 and run it, or run directly in VSCode:
 ```
 python "C:\Users\{user_name}\{other_directory_path_if_any}\aurora-robotics-core-1.0\codes\kinematics\forward-kinematics\py\2-links_2d.py"
+```
 
 A window will open showing the robotic arm. Use the sliders at the bottom to adjust θ1 and θ2. The arm will move, and the end-effector coordinates will update in the top-left corner in real time.
 
