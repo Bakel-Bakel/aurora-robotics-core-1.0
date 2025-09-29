@@ -1,59 +1,86 @@
-
+# Import the needed libraries
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
 
 # --- predefined link lengths (in arbitrary units) ---
-L1 = 1.5
-L2 = 1.0
+L1 = 1.5    # Define length of link 1
+L2 = 1.0    # Define length of link 2
 
+
+# Function to calculate the X and  Y axis of a forward kinematics of a robot 
 def fk(theta1, theta2):
     """Forward kinematics for a 2R planar arm (angles in radians)."""
-    x1 = L1*np.cos(theta1)
-    y1 = L1*np.sin(theta1)
-    x2 = x1 + L2*np.cos(theta1 + theta2)
-    y2 = y1 + L2*np.sin(theta1 + theta2)
-    return (0, 0), (x1, y1), (x2, y2)
+    x1 = L1*np.cos(theta1)                # Calculate x-axis for link 1
+    y1 = L1*np.sin(theta1)                # Calculate y-axis for link 1
+    x2 = x1 + L2*np.cos(theta1 + theta2)  # x2 = X, Calculate X for the forward kinematics of a robot 
+    y2 = y1 + L2*np.sin(theta1 + theta2)  # y2 = Y, Calculate Y for the forward kinematics of a robot 
+    return (0, 0), (x1, y1), (x2, y2)     # Return the base point (0), coordinate of link 1 (x1, y1), general coordinate of the robot
 
+# Plot the 2d robotics arm
 # --- figure and axes ---
-plt.figure(figsize=(7, 7))
-ax = plt.subplot(111)
-ax.set_aspect("equal", adjustable="box")
-ax.set_xlim(- (L1+L2+0.2), L1+L2+0.2)
-ax.set_ylim(- (L1+L2+0.2), L1+L2+0.2)
-ax.grid(True, linestyle="--", linewidth=0.5)
-ax.set_title("2-Link Planar Arm (use sliders below)")
+plt.figure(figsize=(7, 7))                                   # Define the plot size
+ax = plt.subplot(111)                                        # Define a subplot for the robot
+ax.set_aspect("equal", adjustable="box")                     # Set aspect ratio
+ax.set_xlim(- (L1+L2+0.2), L1+L2+0.2)                        # Set the limit for x-axis
+ax.set_ylim(- (L1+L2+0.2), L1+L2+0.2)                        # Set the limit for y-axis
+ax.grid(True, linestyle="--", linewidth=0.5)                 # Allow grid line
+ax.set_title("2-Link Planar Arm (use sliders below)")        # Set plot title
 
+# Define default angles
 # initial angles (radians)
-theta1_0 = np.deg2rad(30.0)
-theta2_0 = np.deg2rad(30.0)
+theta1_0 = np.deg2rad(30.0)       # Define the angle between the ground (or reference point) and link 1
+theta2_0 = np.deg2rad(30.0)       # Define the angle between link 1 and link 2
 
+
+# Used forward kinematics function from above to visualize the 2d robotics arm
 # draw initial arm
+# fixed (or reference) point, joint, end-effector
 base, joint, ee = fk(theta1_0, theta2_0)
+
+# Draw the line object (for the arm)
+# using the first base point, first joint point and the first end-effector for x-axis
+# and the other base point, other joint point and the other end-effector for x-axis
+# set a marker (dot) and a linewidth (or line thickness) of 3 points
 (link_line,) = ax.plot([base[0], joint[0], ee[0]],
                        [base[1], joint[1], ee[1]],
                        marker="o", linewidth=3)
+
+# Create a text box for end-effector at 2% from the left and 98% from the bottom relative to the arm axes
+# aligned vertically to the top and horizontally to the left with a font size of 10
+# box type to round, box background color to be white and edge color of 70%
 ee_text = ax.text(0.02, 0.98, "", transform=ax.transAxes,
                   va="top", ha="left", fontsize=10,
                   bbox=dict(boxstyle="round", fc="w", ec="0.7"))
 
+
 # --- slider axes (beneath plot) ---
+# Set slider position for X-axis and Y-axis
+# ----------------- [15% left, 5% bottom, 70% width, 3% height]
 slider_ax1 = plt.axes([0.15, 0.05, 0.7, 0.03])
 slider_ax2 = plt.axes([0.15, 0.01, 0.7, 0.03])
 
+# Define sliders (position, label, minimum and maximum values, default slider value)
 s_theta1 = Slider(slider_ax1, 'θ1 (deg)', -180.0, 180.0, valinit=np.rad2deg(theta1_0))
 s_theta2 = Slider(slider_ax2, 'θ2 (deg)', -180.0, 180.0, valinit=np.rad2deg(theta2_0))
 
+
+# Define a function to auto-update line plot based on slider input
 def update(_):
-    th1 = np.deg2rad(s_theta1.val)
-    th2 = np.deg2rad(s_theta2.val)
-    b, j, e = fk(th1, th2)
-    link_line.set_data([b[0], j[0], e[0]], [b[1], j[1], e[1]])
+    th1 = np.deg2rad(s_theta1.val)  # X-axis slider value
+    th2 = np.deg2rad(s_theta2.val)  # Y-axis slider value
+    b, j, e = fk(th1, th2)          # Calculate the forward kinematics values (base, joint, and end-effector)
+    link_line.set_data([b[0], j[0], e[0]], [b[1], j[1], e[1]])   # Plot line for robotics arm
+    # Define end-effector
     ee_text.set_text(f"EE: x={e[0]:.3f}, y={e[1]:.3f}\nθ1={np.rad2deg(th1):.1f}°, θ2={np.rad2deg(th2):.1f}°")
     plt.draw()
 
+
+# Trigger a change when either of the sliders are move
 s_theta1.on_changed(update)
 s_theta2.on_changed(update)
 update(None)
 
+
+# Plot/show 2d robotics arm
 plt.show()
