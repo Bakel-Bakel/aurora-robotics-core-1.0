@@ -19,39 +19,29 @@ from sympy.matrices import Matrix
 import math
 
 #Define all the symbols needed
-theta1,theta2,theta4,do,a1,a2,d3 = symbols ("theta1,theta2,theta4,do,a1,a2,d3")
+theta1,theta2,theta4,do,a1,a2,d3,L_1,L_2 = symbols ("theta1,theta2,theta4,do,a1,a2,d3,L_1,L_2")
 
 #Define all the transformation matrix
-Tb_1 = Matrix([[cos(theta1),-sin(theta1), 0 , 0 ],
-               [sin(theta1), cos(theta1), 0 , 0 ],
-               [     0     ,     0      , 1 , do],
-               [     0     ,     0      , 0 , 1 ]])
+TO_A = Matrix([[cos(theta1),-sin(theta1), L_1*cos(theta1)],
+               [sin(theta1), cos(theta1), L_1*sin(theta1)],  
+               [     0     ,     0      , 1 ]])
 
-T1_2 = Matrix([[cos(theta2),-sin(theta2), 0 , 0 ],
-               [sin(theta2), cos(theta2), 0 , a1],
-               [     0     ,     0      , 1 , 0 ],
-               [     0     ,     0      , 0 , 1 ]])
+TA_E = Matrix([[cos(theta2),-sin(theta2), L_2*cos(theta2)],
+               [sin(theta2), cos(theta2), L_2*sin(theta2)],
+               [     0     ,     0      , 1 ]])
 
-T2_3 = Matrix([[     1     ,     0      , 0 , 0 ],
-               [     0     ,     1      , 0 , a2],
-               [     0     ,     0      , 1 , d3],
-               [     0     ,     0      , 0 , 1 ]])
 
-T3_e = Matrix([[cos(theta4),-sin(theta4), 0 , 0 ],
-               [sin(theta4), cos(theta4), 0 , 0 ],
-               [     0     ,     0      , -1 , 0 ],
-               [     0     ,     0      , 0 , 1 ]])
 
 #Multiplying all the transformation matrix to get the final matrix
-Tb_e = Tb_1 * T1_2 * T2_3 * T3_e
+TO_E = TO_A * TA_E
 
 # Simplifying each component of the resulting transformation matrix
-Tb_e_simplified = simplify(Tb_e)
+TO_E_simplified = simplify(TO_E)
 
 # Displaying the simplified transformation matrix
 print("  \n\n")
-#pprint(Tb_e_simplified)
+#pprint(TO_E_simplified)
 
-#pprint(simplify(Tb_1 * T1_2))
-pprint(simplify(Tb_1 * T1_2* T2_3))
-pprint(simplify(Tb_1 * T1_2* T2_3* T3_e))
+#pprint(simplify(TO_A * TA_E))
+pprint(simplify(TO_A * TA_E))
+
