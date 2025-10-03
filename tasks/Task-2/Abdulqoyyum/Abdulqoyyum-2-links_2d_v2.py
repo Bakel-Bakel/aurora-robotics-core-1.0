@@ -14,46 +14,46 @@ def fk(theta1, theta2): #A function fk is defined, it takes in theta1, theta2 pa
     x2 = x1 + L2*np.cos(theta1 + theta2) #This formula gets the value of x2 i.e from origin to tip of L2 in the x direction, (X=x1+x2)
     y2 = y1 + L2*np.sin(theta1 + theta2) #This formula gets the value of y2 i.e from origin to tip of L2 in the y direction, (Y=y1+y2)
     return (0, 0), (x1, y1), (x2, y2)  #The return statement sends back values 0,0,x1,y1,x2,y2 to any program that call the def fk function
-A
 # --- figure and axes ---
-plt.figure(figsize=(7, 7)) #Create a figure function with a specific size
+plt.figure(figsize=(4, 4)) #Create a plot figure  with a size 7inches tall,7inches wide
 ax = plt.subplot(111) #The subplot function take 3 arguments, 1 row, 1 column and the first plot in the figure and asigned ax
 ax.set_aspect("equal", adjustable="box")  #This set the aspect ratio of the axis scaling
-ax.set_xlim(- (L1+L2+0.2), L1+L2+0.2) #Set the x-axis view limits
+ax.set_xlim(- (L1+L2+0.2), L1+L2+0.2) #Set the x-axis view limits with Link 1 and Link 2
 ax.set_ylim(- (L1+L2+0.2), L1+L2+0.2) #set the y-axis view limits
-ax.grid(True, linestyle="--", linewidth=0.5) #configure the grid lines
+ax.grid(True, linestyle="--", linewidth=0.5) #configure the grid to show, -- style, 0.5 thickness
 ax.set_title("2-Link Planar Arm (use sliders below)") #Set a title for the axes
 
 # initial angles (radians)
-theta1_0 = np.deg2rad(30.0) #convert angle 30 from degree to radiaon
-theta2_0 = np.deg2rad(30.0) #convert angle 30 from degree to radiaon
+theta1_0 = np.deg2rad(30.0) #convert angle 30 from degree to radian
+theta2_0 = np.deg2rad(30.0) #convert angle 30 from degree to radian
+
 
 # draw initial arm
 base, joint, ee = fk(theta1_0, theta2_0) #initial angle theta is passed into the fk function then the value is returned into base, joint and ee
 (link_line,) = ax.plot([base[0], joint[0], ee[0]], #draws line from point to point within the x-axis,y-axis
                        [base[1], joint[1], ee[1]], #the marker 'o' is used for the lines, 
                        marker="o", linewidth=3) #linewidth is 0 - 3
-ee_text = ax.text(0.02, 0.98, "", transform=ax.transAxes,  #ax.text()method is used to add text to the matplotlib subplot
-                  va="top", ha="left", fontsize=10, #There are many keywords for customising the appearance 
-                  bbox=dict(boxstyle="round", fc="w", ec="0.7")) #and the positioning of the text
+ee_text = ax.text(0.02, 0.98, "", transform=ax.transAxes,  #draws the text box at the top left corner
+                  va="top", ha="left", fontsize=10, #set text alignment
+                  bbox=dict(boxstyle="round", fc="w", ec="0.7")) #box around the text
  
 # --- slider axes (beneath plot) ---
-slider_ax1 = plt.axes([0.15, 0.05, 0.7, 0.03]) #the plt.axes()function in pyplot module is used to add axes for slider 1
+slider_ax1 = plt.axes([0.15, 0.05, 0.7, 0.03]) #this create a bar for the slider1, left, bottom, width, height
 slider_ax2 = plt.axes([0.15, 0.01, 0.7, 0.03]) #the plt.axes()function in pyplot module is used to add axes for slider 2
 
-s_theta1 = Slider(slider_ax1, 'θ1 (deg)', -180.0, 180.0, valinit=np.rad2deg(theta1_0)) #Slider1 widget is created
+s_theta1 = Slider(slider_ax1, 'θ1 (deg)', -180.0, 180.0, valinit=np.rad2deg(theta1_0)) #Slider1 widget is created with slider axis
 s_theta2 = Slider(slider_ax2, 'θ2 (deg)', -180.0, 180.0, valinit=np.rad2deg(theta2_0)) #Slider2 widget is created
 
-def update(_): #a function
+def update(_): #a function with one argument, ignored
     th1 = np.deg2rad(s_theta1.val) #converting degree to rad for th1
     th2 = np.deg2rad(s_theta2.val) #converting degree to rad for th2
-    b, j, e = fk(th1, th2) #parameters passed into the fk function
-    link_line.set_data([b[0], j[0], e[0]], [b[1], j[1], e[1]]) #used for updating the data of the plotted figure
-    ee_text.set_text(f"EE: x={e[0]:.3f}, y={e[1]:.3f}\nθ1={np.rad2deg(th1):.1f}°, θ2={np.rad2deg(th2):.1f}°") #text
-    plt.draw() #to redraw or update the current figure
+    b, j, e = fk(th1, th2) #fk function is called
+    link_line.set_data([b[0], j[0], e[0]], [b[1], j[1], e[1]]) #used for updating the data of the arm
+    ee_text.set_text(f"EE: x={e[0]:.3f}, y={e[1]:.3f}\nθ1={np.rad2deg(th1):.1f}°, θ2={np.rad2deg(th2):.1f}°") #update text box
+    plt.draw() #update the arm
 
-s_theta1.on_changed(update) #connecting to slider1
-s_theta2.on_changed(update) #connecting to slider2
-update(None) #this will not modify the dictionary
+s_theta1.on_changed(update) #whenever slider1 moves, update is called
+s_theta2.on_changed(update) #connecting to slider2 to update function
+update(None) #runs before slider is touch. None placeholder
 
-plt.show() #this is used to display the generated plot
+plt.show() #display the generated plot
