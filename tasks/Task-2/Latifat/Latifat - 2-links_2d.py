@@ -1,32 +1,34 @@
 
-import numpy as np
-import matplotlib.pyplot as plt
+import numpy as np #python library for maths
+import matplotlib.pyplot as plt #python library for plotting graphs
 from matplotlib.widgets import Slider
 
 # --- predefined link lengths (in arbitrary units) ---
-L1 = 1.5
-L2 = 1.0
+L1 = 1.5 #The first link after the origin(ground)
+L2 = 1.0 #The link next to the first link 
+# theta is joint angle for the rotation/translation of each link
 
-def fk(theta1, theta2):
+def fk(theta1, theta2): #fk is Forward Kinematic for short
     """Forward kinematics for a 2R planar arm (angles in radians)."""
-    x1 = L1*np.cos(theta1)
-    y1 = L1*np.sin(theta1)
-    x2 = x1 + L2*np.cos(theta1 + theta2)
-    y2 = y1 + L2*np.sin(theta1 + theta2)
-    return (0, 0), (x1, y1), (x2, y2)
+    x1 = L1*np.cos(theta1) #Horizontal component for link1
+    y1 = L1*np.sin(theta1) #Vertical component for link 1
+    x2 = x1 + L2*np.cos(theta1 + theta2) #Horizontal for the whole system (I'd declare it differently though)
+    y2 = y1 + L2*np.sin(theta1 + theta2) #Vertical for the whole system
+    return (0, 0), (x1, y1), (x2, y2) #to return values for all the declared variables
+#0,0 means from the origin
 
 # --- figure and axes ---
 plt.figure(figsize=(7, 7))
 ax = plt.subplot(111)
 ax.set_aspect("equal", adjustable="box")
-ax.set_xlim(- (L1+L2+0.2), L1+L2+0.2)
-ax.set_ylim(- (L1+L2+0.2), L1+L2+0.2)
-ax.grid(True, linestyle="--", linewidth=0.5)
+ax.set_xlim(- (L1+L2+0.2), L1+L2+0.2) #lower limit and upper limit for the horizontal
+ax.set_ylim(- (L1+L2+0.2), L1+L2+0.2) #lower and upper limit for the vertical
+ax.grid(True, linestyle="--", linewidth=0.5) #to turn on the grid lines for the graph
 ax.set_title("2-Link Planar Arm (use sliders below)")
 
 # initial angles (radians)
-theta1_0 = np.deg2rad(30.0)
-theta2_0 = np.deg2rad(30.0)
+theta1_0 = np.deg2rad(30.0) #theta1 with respect to the origin (ground)
+theta2_0 = np.deg2rad(30.0) #theta2 with respect to the origin
 
 # draw initial arm
 base, joint, ee = fk(theta1_0, theta2_0)
