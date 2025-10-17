@@ -1,0 +1,77 @@
+[0.023s] Invoking command in '/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/src/ros2_control_demos/example_6 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6
+[0.062s] -- The CXX compiler identification is GNU 11.4.0
+[0.068s] -- Detecting CXX compiler ABI info
+[0.114s] -- Detecting CXX compiler ABI info - done
+[0.114s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.114s] -- Detecting CXX compile features
+[0.114s] -- Detecting CXX compile features - done
+[0.116s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.337s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.375s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.396s] -- Found hardware_interface: 2.52.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.442s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.447s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.457s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.470s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.484s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.647s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.650s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.659s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.691s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.692s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.707s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.711s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.719s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.725s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.734s] -- Looking for C++ include pthread.h
+[0.830s] -- Looking for C++ include pthread.h - found
+[0.830s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.929s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.930s] -- Found Threads: TRUE  
+[0.976s] -- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[1.969s] -- Configuring done
+[1.986s] -- Generating done
+[1.993s] -- Build files have been written to: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6
+[2.004s] Invoked command in '/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/src/ros2_control_demos/example_6 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6
+[2.005s] Invoking command in '/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6 -- -j24 -l24
+[2.044s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_control_demo_example_6.dir/hardware/rrbot_actuator.cpp.o[0m
+[5.348s] [100%] [32m[1mLinking CXX shared library libros2_control_demo_example_6.so[0m
+[5.466s] [100%] Built target ros2_control_demo_example_6
+[5.486s] Invoked command in '/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6 -- -j24 -l24
+[5.490s] Invoking command in '/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6
+[5.491s] -- Install configuration: ""
+[5.491s] -- Execute custom install script
+[5.491s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6//ros2_control_demo_example_6.xml
+[5.498s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/include/ros2_control_demo_example_6/ros2_control_demo_example_6/rrbot_actuator.hpp
+[5.504s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/launch/view_robot.launch.py
+[5.510s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/ros2_control/rrbot_modular_actuators.ros2_control.xacro
+[5.516s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/urdf/rrbot_modular_actuators.urdf.xacro
+[5.524s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/launch/rrbot_modular_actuators.launch.py
+[5.530s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/launch/test_forward_position_controller.launch.py
+[5.535s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/config/rrbot_forward_position_publisher.yaml
+[5.542s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/config/rrbot_modular_actuators.yaml
+[5.548s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/environment/library_path.sh
+[5.554s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/environment/library_path.dsv
+[5.560s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_example_6
+[5.567s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_example_6
+[5.573s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/environment/ament_prefix_path.sh
+[5.579s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/environment/ament_prefix_path.dsv
+[5.585s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/environment/path.sh
+[5.592s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/environment/path.dsv
+[5.598s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/local_setup.bash
+[5.602s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/local_setup.sh
+[5.610s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/local_setup.zsh
+[5.618s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/local_setup.dsv
+[5.621s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/package.dsv
+[5.628s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ament_index/resource_index/packages/ros2_control_demo_example_6
+[5.632s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ros2_control_demo_example_6
+[5.637s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/cmake/ament_cmake_export_targets-extras.cmake
+[5.646s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.652s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/cmake/ros2_control_demo_example_6Config.cmake
+[5.658s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/cmake/ros2_control_demo_example_6Config-version.cmake
+[5.667s] -- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/package.xml
+[5.672s] -- Installing: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/lib/libros2_control_demo_example_6.so
+[5.672s] -- Set runtime path of "/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/lib/libros2_control_demo_example_6.so" to ""
+[5.672s] -- Installing: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/cmake/export_ros2_control_demo_example_6Export.cmake
+[5.672s] -- Installing: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_6/share/ros2_control_demo_example_6/cmake/export_ros2_control_demo_example_6Export-noconfig.cmake
+[5.676s] Invoked command in '/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_6

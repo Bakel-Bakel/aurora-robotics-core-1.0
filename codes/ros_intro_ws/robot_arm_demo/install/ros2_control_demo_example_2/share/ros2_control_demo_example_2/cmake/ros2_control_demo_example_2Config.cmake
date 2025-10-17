@@ -1,0 +1,1 @@
+/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_2/ament_cmake_core/ros2_control_demo_example_2Config.cmake

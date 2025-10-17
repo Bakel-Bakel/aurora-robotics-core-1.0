@@ -1,0 +1,46 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_example_15
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/rviz/multi_controller_manager.rviz
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/rviz/rrbot_namespace.rviz
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/launch/multi_controller_manager_example_two_rrbots.launch.py
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/launch/rrbot_base.launch.py
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/launch/rrbot_namespace.launch.py
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/launch/test_forward_position_controller.launch.py
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/launch/test_joint_trajectory_controller.launch.py
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/launch/test_multi_controller_manager_forward_position_controller.launch.py
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/launch/test_multi_controller_manager_joint_trajectory_controller.launch.py
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/config/multi_controller_manager_forward_position_publisher.yaml
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/config/multi_controller_manager_joint_trajectory_publisher.yaml
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/config/multi_controller_manager_rrbot_1_controllers.yaml
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/config/multi_controller_manager_rrbot_2_controllers.yaml
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/config/rrbot_namespace_controllers.yaml
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/config/rrbot_namespace_forward_position_publisher.yaml
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/config/rrbot_namespace_joint_trajectory_publisher.yaml
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_example_15
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_example_15
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/environment/ament_prefix_path.sh
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/environment/ament_prefix_path.dsv
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/environment/path.sh
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/environment/path.dsv
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/local_setup.bash
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/local_setup.sh
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/local_setup.zsh
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/local_setup.dsv
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/package.dsv
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ament_index/resource_index/packages/ros2_control_demo_example_15
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/cmake/ros2_control_demo_example_15Config.cmake
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/cmake/ros2_control_demo_example_15Config-version.cmake
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_15/share/ros2_control_demo_example_15/package.xml

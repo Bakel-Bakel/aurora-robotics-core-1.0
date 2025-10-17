@@ -1,0 +1,1 @@
+/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demo_description/ament_cmake_environment_hooks/local_setup.sh

@@ -1,0 +1,18 @@
+[0mCMake Error: Could not find cmake module file: CMakeDetermine0.5.1Compiler.cmake[0m
+[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+Missing variable is:
+CMAKE_0.5.1_COMPILER_ENV_VAR[0m
+[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+Missing variable is:
+CMAKE_0.5.1_COMPILER[0m
+[0mCMake Error: Could not find cmake module file: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/robotic-arm-task/fanuc_m710ic_description/build/fanuc_m710ic_support/CMakeFiles/3.22.1/CMake0.5.1Compiler.cmake[0m
+[31mCMake Error at CMakeLists.txt:3 (project):
+  No CMAKE_0.5.1_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting the CMake cache entry
+  CMAKE_0.5.1_COMPILER to the full path to the compiler, or to the compiler
+  name if it is in the PATH.
+
+[0m
+[0mCMake Error: Could not find cmake module file: CMake0.5.1Information.cmake[0m
+[0mCMake Error: CMAKE_0.5.1_COMPILER not set, after EnableLanguage[0m

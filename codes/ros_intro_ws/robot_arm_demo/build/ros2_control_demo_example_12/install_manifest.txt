@@ -1,0 +1,6 @@
+/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_12/lib/libros2_control_demo_example_12.so
+/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_12/lib/libpassthrough_controller.so
+/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_12/share/ros2_control_demo_example_12/cmake/export_passthrough_controllerExport.cmake
+/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_12/share/ros2_control_demo_example_12/cmake/export_passthrough_controllerExport-noconfig.cmake
+/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_12/share/ros2_control_demo_example_12/cmake/export_ros2_control_demo_example_12Export.cmake
+/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_12/share/ros2_control_demo_example_12/cmake/export_ros2_control_demo_example_12Export-noconfig.cmake

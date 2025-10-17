@@ -1,0 +1,35 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/build/ros2_control_demos
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ament_index/resource_index/package_run_dependencies/ros2_control_demos
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ament_index/resource_index/parent_prefix_path/ros2_control_demos
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/environment/ament_prefix_path.sh
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/environment/ament_prefix_path.dsv
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/environment/path.sh
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/environment/path.dsv
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/local_setup.bash
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/local_setup.sh
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/local_setup.zsh
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/local_setup.dsv
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/package.dsv
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ament_index/resource_index/packages/ros2_control_demos
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/cmake/ros2_control_demosConfig.cmake
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/cmake/ros2_control_demosConfig-version.cmake
+-- Symlinking: /home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demos/share/ros2_control_demos/package.xml

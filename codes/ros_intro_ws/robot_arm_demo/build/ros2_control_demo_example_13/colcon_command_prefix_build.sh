@@ -1,0 +1,4 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_description/share/ros2_control_demo_description/package.sh"
+. "/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_4/share/ros2_control_demo_example_4/package.sh"
+. "/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/install/ros2_control_demo_example_5/share/ros2_control_demo_example_5/package.sh"
