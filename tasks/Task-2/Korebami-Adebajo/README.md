@@ -1,4 +1,4 @@
-"TASK 2"
+"TASK 2" KOREBAMI adebajo
 I learnt about adding sliders to a pu=ython file
 About update a function with the new slider information
 Also a revamp of college kinematics # Throwback to the past

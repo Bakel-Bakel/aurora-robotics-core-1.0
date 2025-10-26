@@ -56,5 +56,5 @@ def update(_): # updates the new slider values through the f function recalculat
 s_theta1.on_changed(update)
 s_theta2.on_changed(update)
 update(None)
-#Shows figure 
+#Shows figure of the links 
 plt.show()
