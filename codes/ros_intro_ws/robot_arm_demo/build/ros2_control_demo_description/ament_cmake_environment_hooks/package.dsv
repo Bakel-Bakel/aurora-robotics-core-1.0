@@ -1,4 +1,0 @@
-source;share/ros2_control_demo_description/local_setup.bash
-source;share/ros2_control_demo_description/local_setup.dsv
-source;share/ros2_control_demo_description/local_setup.sh
-source;share/ros2_control_demo_description/local_setup.zsh
