@@ -1,1 +1,0 @@
-#pragma message("#include \"passthrough_controller_parameters.hpp\" is deprecated. Use #include <ros2_control_demo_example_12/passthrough_controller_parameters.hpp> instead.")

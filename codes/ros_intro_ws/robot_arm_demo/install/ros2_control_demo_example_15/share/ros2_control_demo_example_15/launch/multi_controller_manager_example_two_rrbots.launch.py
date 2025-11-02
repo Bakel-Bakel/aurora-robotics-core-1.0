@@ -1,1 +1,0 @@
-/home/lordcruise/Documents/aurora-robotics-core-1.0/codes/ros_intro_ws/robot_arm_demo/src/ros2_control_demos/example_15/bringup/launch/multi_controller_manager_example_two_rrbots.launch.py
