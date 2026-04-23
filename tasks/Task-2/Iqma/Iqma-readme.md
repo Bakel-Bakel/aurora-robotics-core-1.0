@@ -49,6 +49,7 @@ Base 0 ●────────► X-axis
 
 So, we first transformed A to 0, then E to A, then multiply both together to get E to 0.
 
+```
 <sup>o</sup><sub>A<sub>T = ----                  ----      
                            | cos0₁ -sin0₁  L₁ cos0₁ |
                            | sin0₁  cos0₁  L₁ sin0₁ |
@@ -64,6 +65,8 @@ so after multiplying we have
                            | cos0₁ -sin0₁  L₁ cos0₁ |
                            | sin0₁  cos0₁  L₁ sin0₁ |
                            ----                  ----
+
+```
 remember that it differs based on matrix parameters (multiplying a 2x2 matrix by a 2x1 is different from multiplying a 3x3 by a 3x3)       
 
 [Link to class recording](https://www.youtube.com/watch?v=pMIFt7OhBFY&list=PL0vKqkgonPB4eaz1xtSsuH4O1duWuI1sg&index=14&t=2s) in case you need to go over the calculations again (you probably will)
@@ -71,4 +74,5 @@ remember that it differs based on matrix parameters (multiplying a 2x2 matrix by
  
  ## ITK diaries
 
+I do most of my note-taking in notion, you can find them [here](https://www.notion.so/Robotics-3372ca23b5a980afbc74ec74c0664e41?source=copy_link)
  
